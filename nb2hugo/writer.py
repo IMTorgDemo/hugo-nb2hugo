@@ -1,4 +1,5 @@
 import os
+import re
 import shutil
 from .exporter import HugoExporter
 
@@ -15,7 +16,8 @@ class HugoWriter:
         """
         (markdown, resources) = self._exporter.from_filename(notebook)
         self._write_resources_images(resources, site_dir, section)
-        self._write_markdown(markdown, resources, site_dir, section)
+        markdown_post = self._post_process_markdown(markdown)
+        self._write_markdown(markdown_post, resources, site_dir, section)
         
     def _write_resources_images(self, resources, site_dir, section):
         """Process resources to create output images in static directory."""
@@ -38,6 +40,16 @@ class HugoWriter:
                 shutil.copy2(value, target)
                 shortname = '/'.join(target.split('/')[-3:])
                 print(f"Created '{shortname}'")
+
+    def _post_process_markdown(self, markdown):
+        """Make minor modifications to markdown after it is processed 
+        by nbconvert."""
+        tmp_1 = re.sub(r'\n{4,20}', r'\n\n', markdown)
+        #tmp_2 = re.sub(r'```\n+\s+[^!`]', r'```OUT\n\n    ', tmp_1)
+        #tmp_3= re.sub(r'```OUT\n\n    ```', r'```OUT\n\n```', tmp_2)
+        return tmp_1
+
+
 
     def _write_markdown(self, markdown, resources, site_dir, section):
         """Save markdown to file."""
