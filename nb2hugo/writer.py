@@ -45,9 +45,10 @@ class HugoWriter:
         """Make minor modifications to markdown after it is processed 
         by nbconvert."""
         tmp_1 = re.sub(r'\n{4,20}', r'\n\n', markdown)
-        #tmp_2 = re.sub(r'```\n+\s+[^!`]', r'```OUT\n\n    ', tmp_1)
+        tmp_2 = re.sub(r'    null', r'', tmp_1)
+        #tmp_2 = re.sub(r'```\n\n```\n+\s+[^!`]', r'```OUT\n\n    ', tmp_1)
         #tmp_3= re.sub(r'```OUT\n\n    ```', r'```OUT\n\n```', tmp_2)
-        return tmp_1
+        return tmp_2
 
 
 

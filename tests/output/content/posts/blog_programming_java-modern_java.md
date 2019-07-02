@@ -204,7 +204,7 @@ System.out.println(result1);
     6.8
     Hello, World
 
-    null
+
 
 Basic arrays
 
@@ -219,7 +219,7 @@ System.out.println(strings.length);
     2
     3
 
-    null
+
 
 Typical main within class
 
@@ -293,7 +293,7 @@ System.out.println( x.mIfElse(y) );
     test
     Not many arguments
 
-    null
+
 
 Array actions
 
@@ -352,7 +352,7 @@ x.sum();
     [v2] Sum2 of {1.1,2.2,3.3}=6.6
     [v3] Sum3 of {1.1,2.2,3.3}=6.6
 
-    null
+
 
 Declare and allocate arrays
 
@@ -388,7 +388,7 @@ x.run();
     1
     1
 
-    null
+
 
 Typical class
 
@@ -490,7 +490,7 @@ System.out.println(y[0].getRadius() );
 
     3.716013423654272
 
-    null
+
 
 Static methods (math operations) these are essentially global functions
 
@@ -509,7 +509,7 @@ System.out.println(Math.log(10));
     9.974182454814718
     2.302585092994046
 
-    null
+
 
 Use of static import
 
@@ -718,7 +718,7 @@ System.out.println(num);
     John
     3
 
-    null
+
 
 ```Java
 package generics.beaker;
@@ -973,7 +973,7 @@ System.out.println(myArr.get(1));
     [first new item, new item, another item, last item]
     new item
 
-    null
+
 
 ```Java
 package test.beaker;
@@ -1016,7 +1016,7 @@ System.out.println(result);
     
     [first new item, new item, another item]
 
-    null
+
 
 __List methods__
 
@@ -1049,7 +1049,7 @@ System.out.println("Num words: " + words.size());
     List: [hi, hola]
     Num words: 2
 
-    null
+
 
 ```Java
 // lambda
@@ -1083,7 +1083,7 @@ for(String word: wordArray) {
     Word: HI!
     Word: HOLA!
 
-    null
+
 
 ```Java
 // maps / hashmaps (lookup tables or associative arrays)
@@ -1099,7 +1099,7 @@ System.out.println(result);
 
     1.0
 
-    null
+
 
 hashmap performance
 
@@ -1168,7 +1168,7 @@ stateMap.forEach((k,v) -> System.out.printf("(%s,%s)%n", k, v));
     (two,2)
     (three,3)
 
-    null
+
 
 ```Java
 // set
@@ -1187,7 +1187,7 @@ System.out.println( set.contains("three") );
     true
     false
 
-    null
+
 
 // printf
 
