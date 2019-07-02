@@ -10,7 +10,14 @@ Jupyter Notebook is a great way to create a single document that contains code t
 
 ## Installation
 
-Using pip:
+Using setup.py
+```
+python3 setup.py install --force
+pip3 install .
+```
+
+
+~Using pip:~
 ```
 pip install nb2hugo
 ```
