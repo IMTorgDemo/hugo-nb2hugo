@@ -6,7 +6,7 @@ nb2hugo ./IMTorgDemo-Notebooks/blog_programming_java-modern_java.ipynb  --site-d
 """
 
 
-notebook = './tests/resources/blog_programming_java-modern_java.ipynb'
+notebook = './tests/resources/blog_test-hugo_blog.json'
 site_dir = './tests/output'
 section = 'posts'
 
