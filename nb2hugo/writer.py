@@ -17,6 +17,7 @@ class HugoWriter:
         (markdown, resources) = self._exporter.from_filename(notebook)
         self._write_resources_images(resources, site_dir, section)
         markdown_post = self._post_process_markdown(markdown)
+        #markdown_post = markdown
         self._write_markdown(markdown_post, resources, site_dir, section)
         
     def _write_resources_images(self, resources, site_dir, section):
@@ -44,14 +45,15 @@ class HugoWriter:
     def _post_process_markdown(self, markdown):
         """Make minor modifications to markdown after it is processed 
         by nbconvert."""
-        tmp_1 = re.sub(r'\n{4,20}', r'\n\n', markdown)
-        tmp_2 = re.sub(r'    null', r'', tmp_1)
-        tmp_3 = re.sub(r"\s\s\s\s\s", r'\n', tmp_2)
-        tmp_4 = re.sub(r"\s```", r'\n```', tmp_3)
-        tmp_5 = re.sub(r'\n{4,20}', r'\n', tmp_4)
+        tmp_1 = re.sub(r'\n\n```', r'\n```', markdown)
+        #tmp_1 = re.sub(r'\n{4,20}', r'\n\n', markdown)
+        #tmp_2 = re.sub(r'    null', r'', tmp_1)
+        #tmp_3 = re.sub(r"\s\s\s\s\s", r'\n', tmp_2)
+        #tmp_4 = re.sub(r"\s```", r'\n```', tmp_3)
+        #tmp_5 = re.sub(r'\n{4,20}', r'\n', tmp_4)
         #tmp_2 = re.sub(r'```\n\n```\n+\s+[^!`]', r'```OUT\n\n    ', tmp_1)
         #tmp_3= re.sub(r'```OUT\n\n    ```', r'```OUT\n\n```', tmp_2)
-        return tmp_5
+        return tmp_1
 
 
 
