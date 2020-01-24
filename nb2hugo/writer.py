@@ -46,9 +46,12 @@ class HugoWriter:
         by nbconvert."""
         tmp_1 = re.sub(r'\n{4,20}', r'\n\n', markdown)
         tmp_2 = re.sub(r'    null', r'', tmp_1)
+        tmp_3 = re.sub(r"\s\s\s\s\s", r'\n', tmp_2)
+        tmp_4 = re.sub(r"\s```", r'\n```', tmp_3)
+        tmp_5 = re.sub(r'\n{4,20}', r'\n', tmp_4)
         #tmp_2 = re.sub(r'```\n\n```\n+\s+[^!`]', r'```OUT\n\n    ', tmp_1)
         #tmp_3= re.sub(r'```OUT\n\n    ```', r'```OUT\n\n```', tmp_2)
-        return tmp_2
+        return tmp_5
 
 
 

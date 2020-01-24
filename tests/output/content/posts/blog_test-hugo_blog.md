@@ -29,9 +29,9 @@ Example of one output
 print('goodbye!')
 ```
 
-    ```output
-    goodbye!
-    ```
+```output
+goodbye!
+```
 
 Example of multiple outputs
 
@@ -42,11 +42,11 @@ print('world')
 print('goodbye!')
 ```
 
-    ```output
-    hello
-    world
-    goodbye!
-    ```
+```output
+hello
+world
+goodbye!
+```
 
 ### Subsection header
 
@@ -136,52 +136,50 @@ df.head()
 
 <div>
 <style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
+.dataframe tbody tr th:only-of-type {
+    vertical-align: middle;
+}
+ .dataframe tbody tr th {
+    vertical-align: top;
+}
+ .dataframe thead th {
+    text-align: right;
+}
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>col1</th>
-      <th>col2</th>
-    </tr>
+<tr style="text-align: right;">
+  <th></th>
+  <th>col1</th>
+  <th>col2</th>
+</tr>
   </thead>
   <tbody>
-    <tr>
-      <th>0</th>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>4</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>5</td>
-      <td>5</td>
-    </tr>
+<tr>
+  <th>0</th>
+  <td>1</td>
+  <td>1</td>
+</tr>
+<tr>
+  <th>1</th>
+  <td>2</td>
+  <td>2</td>
+</tr>
+<tr>
+  <th>2</th>
+  <td>3</td>
+  <td>3</td>
+</tr>
+<tr>
+  <th>3</th>
+  <td>4</td>
+  <td>4</td>
+</tr>
+<tr>
+  <th>4</th>
+  <td>5</td>
+  <td>5</td>
+</tr>
   </tbody>
 </table>
 </div>
@@ -204,18 +202,18 @@ The code above is written in python.  Now, lets try R statistical language.
 %R require(ggplot2)
 ```
 
-    ```output
-    array([1], dtype=int32)
-    ```
+```output
+array([1], dtype=int32)
+```
 
 ```python
 import pandas as pd
 df = pd.DataFrame({
-        'Letter': ['a', 'a', 'a', 'b', 'b', 'b', 'c', 'c', 'c'],
-        'X': [4, 3, 5, 2, 1, 7, 7, 5, 9],
-        'Y': [0, 4, 3, 6, 7, 10, 11, 9, 13],
-        'Z': [1, 2, 3, 1, 2, 3, 1, 2, 3]
-    })
+    'Letter': ['a', 'a', 'a', 'b', 'b', 'b', 'c', 'c', 'c'],
+    'X': [4, 3, 5, 2, 1, 7, 7, 5, 9],
+    'Y': [0, 4, 3, 6, 7, 10, 11, 9, 13],
+    'Z': [1, 2, 3, 1, 2, 3, 1, 2, 3]
+})
 ```
 
 
@@ -224,12 +222,15 @@ df = pd.DataFrame({
 head(df, 3)
 ```
 
-    ```output
-      Letter X Y Z
-    0      a 4 0 1
-    1      a 3 4 2
-    2      a 5 3 3
-    ```
+```output
+  Letter X Y Z
+0
+ a 4 0 1
+1
+ a 3 4 2
+2
+ a 5 3 3
+```
 
 
 ```r
@@ -251,9 +252,9 @@ Now, the kernel is changed to Groovy to introduce autotranslation.  Autotranslat
 beakerx.foo = "a groovy value"
 ```
 
-    ```output
-    a groovy value
-    ```
+```output
+a groovy value
+```
 
 ### Javascript
 
@@ -275,9 +276,9 @@ from beakerx import beakerx
 beakerx.bar
 ```
 
-    ```output
-    [23, 48, 7, 'a groovy value']
-    ```
+```output
+[23, 48, 7, 'a groovy value']
+```
 
 ### HTML
 
@@ -288,7 +289,7 @@ The below is written in HTML and is used for rendering within the notebook.
 %%html
 <style>
 .node {
-    background-color: lightblue;
+background-color: lightblue;
 }
 </style>
 <div class="node"> Hello World </div>
@@ -298,7 +299,7 @@ The below is written in HTML and is used for rendering within the notebook.
 ```output
 <style>
 .node {
-    background-color: lightblue;
+background-color: lightblue;
 }
 </style>
 
@@ -314,7 +315,7 @@ Use the `<script>` tag to write safe, non-rendering HTML that still allows for c
 <script type="application/text"> 
 <style>
 .node {
-    background-color: lightblue;
+background-color: lightblue;
 }
 </style>
 <div class="node"> Hello World </div>
@@ -326,7 +327,7 @@ Use the `<script>` tag to write safe, non-rendering HTML that still allows for c
 <script type="application/text"> 
 <style>
 .node {
-    background-color: lightblue;
+background-color: lightblue;
 }
 </style>
 <div class="node"> Hello World </div>
@@ -339,7 +340,8 @@ When you use `nbconvert` to change to markdown, you will receive the following e
 
 ```python
 %%output
-writer.convert(notebook, site_dir, section)                                              
+writer.convert(notebook, site_dir, section)
+ 
 /usr/local/lib/python3.7/site-packages/nbconvert-5.5.0-py3.7.egg/nbconvert/filters/datatypefilter.
 py:41: UserWarning: Your element with mimetype(s) dict_keys(['application/javascript']) is not able to be represented.
   mimetypes=output.keys())
@@ -355,9 +357,9 @@ Now, manually change the kernel back to python.
 print('back to python')
 ```
 
-    ```output
-    back to python
-    ```
+```output
+back to python
+```
 
 ## Final Section
 
