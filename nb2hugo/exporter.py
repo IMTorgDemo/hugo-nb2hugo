@@ -25,7 +25,7 @@ class HugoExporter(MarkdownExporter):
             FrontMatterPreprocessor,
             FixLatexPreprocessor,
             RawPreprocessor,
-            ImagesPreprocessor,
+            ImagesPreprocessor
         ],
         help="""List of preprocessors, by name or namespace, to enable."""
     ).tag(config=True)

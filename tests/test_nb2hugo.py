@@ -2,7 +2,7 @@ import pytest
 from nb2hugo.writer import HugoWriter
 
 """
-nb2hugo ./IMTorgDemo-Notebooks/blog_programming_java-modern_java.ipynb  --site-dir ./Hugo_Site/ --section posts
+nb2hugo ./IMTorgDemo-Notebooks/blog_test-hugo_blog.ipynb --site-dir ./Hugo_Site/ --section posts
 """
 
 

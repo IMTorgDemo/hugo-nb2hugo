@@ -16,6 +16,8 @@ setup(name='nb2hugo',
       author_email='vlunot@gmail.com',
       license='MIT',
       packages=find_packages(),
+      package_data={
+        '': ['hugo_markdown.tpl']},
       install_requires=[
           'nbconvert',
           'nbformat',
