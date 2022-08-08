@@ -1,7 +1,0 @@
-{
-  "tests/preprocessors/test_fixlatex.py": true,
-  "tests/preprocessors/test_frontmatter.py": true,
-  "tests/preprocessors/test_images.py": true,
-  "tests/test_exporter.py": true,
-  "tests/test_nb2hugo.py": true
-}
