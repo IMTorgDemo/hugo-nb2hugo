@@ -8,6 +8,7 @@ def preprocessor():
     """Return an instance of FixLatexPreprocessor."""
     return FixLatexPreprocessor()
 
+
 source = (
     'Some text with an inline equality $escaped\_0 = lower_0$.\n' 
     'And a display equality:\n'
@@ -27,12 +28,12 @@ dollars_processed = (
     '\\\\]\n'
 )
 fully_processed = (
-    'Some text with an inline equality \\\\(escaped\\\\_0 = lower_0\\\\).\n' 
+    'Some text with an inline equality \\\\(escaped\\_0 = lower\\_0\\\\).\n' 
     'And a display equality:\n'
-    '\\\\[escaped\\\\_1 = subscript_1.\\\\]\n'
+    '\\\\[escaped\\_1 = subscript\\_1.\\\\]\n'
     'And a second one on multiple lines:\n'
     '\\\\[\n'
-    'escaped\\\\_2\n'
+    'escaped\\_2\n'
     '\\\\]\n'
 )
 

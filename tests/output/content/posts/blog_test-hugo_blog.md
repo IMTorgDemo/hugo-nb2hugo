@@ -27,9 +27,12 @@ Example of one output
 ```python
 print('goodbye!')
 ```
-``` nb-output
+
+{{< output >}}
+```nb-output
 goodbye!
 ```
+{{< /output >}}
 
 Example of multiple outputs
 
@@ -38,11 +41,14 @@ print('hello')
 print('world')
 print('goodbye!')
 ```
-``` nb-output
+
+{{< output >}}
+```nb-output
 hello
 world
 goodbye!
 ```
+{{< /output >}}
 
 ### Subsection header
 
@@ -202,9 +208,12 @@ The code above is written in python.  Now, lets try R statistical language.
 
 
 
-``` nb-output
+
+{{< output >}}
+```nb-output
 array([1], dtype=int32)
 ```
+{{< /output >}}
 
 
 
@@ -222,12 +231,15 @@ df = pd.DataFrame({
 %%R -i df
 head(df, 3)
 ```
-``` nb-output
+
+{{< output >}}
+```nb-output
   Letter X Y Z
 0      a 4 0 1
 1      a 3 4 2
 2      a 5 3 3
 ```
+{{< /output >}}
 
 ```r
 %%R -i df -w 400 -h 300
@@ -249,9 +261,12 @@ beakerx.foo = "a groovy value"
 
 
 
-``` nb-output
+
+{{< output >}}
+```nb-output
 a groovy value
 ```
+{{< /output >}}
 
 
 
@@ -280,9 +295,12 @@ beakerx.bar
 
 
 
-``` nb-output
+
+{{< output >}}
+```nb-output
 [23, 48, 7, 'a groovy value']
 ```
+{{< /output >}}
 
 
 
@@ -353,9 +371,12 @@ Now, manually change the kernel back to python.
 ```python
 print('back to python')
 ```
-``` nb-output
+
+{{< output >}}
+```nb-output
 back to python
 ```
+{{< /output >}}
 
 ## Final Section
 

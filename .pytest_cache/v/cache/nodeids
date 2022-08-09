@@ -1,0 +1,15 @@
+[
+  "tests/test_exporter.py::test_exporter",
+  "tests/test_nb2hugo.py::test_exporter",
+  "tests/preprocessors/test_fixlatex.py::test_replace_latex_enclosing_dollars",
+  "tests/preprocessors/test_fixlatex.py::test_fix_latex_escaped_underscores",
+  "tests/preprocessors/test_fixlatex.py::test_preprocess_cell[input_cell0-expected_cell0]",
+  "tests/preprocessors/test_fixlatex.py::test_preprocess_cell[input_cell1-expected_cell1]",
+  "tests/preprocessors/test_fixlatex.py::test_preprocess_cell[input_cell2-expected_cell2]",
+  "tests/preprocessors/test_frontmatter.py::test_toml_frontmatter",
+  "tests/preprocessors/test_frontmatter.py::test_preprocess",
+  "tests/preprocessors/test_images.py::test_process_image_link",
+  "tests/preprocessors/test_images.py::test_preprocess_cell[input_cell0-expected_cell0-False]",
+  "tests/preprocessors/test_images.py::test_preprocess_cell[input_cell1-expected_cell1-False]",
+  "tests/preprocessors/test_images.py::test_preprocess_cell[input_cell2-expected_cell2-True]"
+]

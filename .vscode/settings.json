@@ -25,5 +25,6 @@
         "**/.DS_Store": true,
         "**/*.pyc": true,
         "**/__pycache__": true
-    }
+    },
+    "jupyter.debugJustMyCode": false
 }

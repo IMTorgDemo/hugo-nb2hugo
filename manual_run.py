@@ -72,9 +72,9 @@ expected_markdown = (
     'This line should be visible.\n'
     '\n'
     '\n'
-    'Some text with an inline equality \\\\(escaped\\\\_0 = lower\\_0\\\\).\n'
+    'Some text with an inline equality \\\\(escaped\\\\_0 = lower_0\\\\).\n' 
     'And a display equality:\n'
-    '\\\\[escaped\\\\_1 = subscript\\_1.\\\\]'
+    '\\\\[escaped\\\\_1 = subscript_1.\\\\]'
     '\n'
     '\n'
     'Some text with an ![image](https://url.url/image.png).\n'
@@ -82,8 +82,8 @@ expected_markdown = (
     '\n'
 )
 
-def test_exporter(tmpdir):
-    exporter = HugoExporter()
-    with pytest.warns(UserWarning, match='should be ignored.$'):
-        markdown, resources = exporter.from_notebook_node(notebook)
-    assert markdown == expected_markdown   
+
+exporter = HugoExporter()
+with pytest.warns(UserWarning, match='should be ignored.$'):
+    markdown, resources = exporter.from_notebook_node(notebook)
+assert markdown == expected_markdown

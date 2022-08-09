@@ -7,11 +7,13 @@ verify_ssl = true
 pylint = "*"
 
 [packages]
-nbconvert = "*"
 nbformat = "*"
 traitlets = "*"
 argparse = "*"
 pytest = "*"
+nbconvert = "==5.5.0"
+jinja2 = "==2.10.1"
+markupsafe = "==2.0.1"
 
 [requires]
 python_version = "3.7"
