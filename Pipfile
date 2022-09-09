@@ -12,7 +12,7 @@ traitlets = "*"
 argparse = "*"
 pytest = "*"
 nbconvert = "==5.5.0"
-jinja2 = "==2.10.1"
+jinja2 = "==2.11.3"
 markupsafe = "==2.0.1"
 
 [requires]
